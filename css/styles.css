@@ -617,6 +617,7 @@ img {
 .footer-content {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-box {
@@ -664,6 +665,59 @@ img {
 
 .footer-icon {
   fill: var(--light);
+}
+
+.subscribe-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-form-label {
+}
+
+.footer-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.footer-button {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: var(--primary-brand);
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-button-icon {
+  margin-left: 16px;
 }
 
 /* Modal style */
@@ -750,16 +804,6 @@ img {
    */
 }
 
-/* .form {
-  display: flex;
-  width: 360px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  border-radius: 4px;
-  padding: 16px 24px;
-} */
-
 .modal-form-label {
   margin-bottom: 8px;
 }
@@ -771,7 +815,7 @@ img {
   color: var(--lightslate);
   display: block;
   margin-bottom: 4px;
-
+  margin-top: 8px;
   /* display: flex;
   flex-direction: column;
   margin-bottom: 4px;
@@ -810,7 +854,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-icon:focus {
+.modal-form-input:focus + .modal-form-icon {
   fill: var(--primary-brand);
 }
 
@@ -840,13 +884,17 @@ img {
 
 .checkbox-container {
   margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 16px;
 }
 
 .checkbox-input-hidden {
 }
 
-.checkbox-input-hidden :checked + .confirm-label .check-box {
-  background-color: #404bbf;
+.checkbox-input-hidden:checked + .confirm-label .check-box {
+  background-color: var(--pressed-state);
   border: none;
   fill: var(--light);
 }
@@ -873,6 +921,7 @@ img {
 
 .check-link {
   color: var(--primary-brand);
+  text-decoration: underline;
 }
 
 .modal-button-send {
@@ -890,4 +939,5 @@ img {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 }
