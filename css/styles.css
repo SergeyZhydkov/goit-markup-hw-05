@@ -842,10 +842,10 @@ img {
   margin-bottom: 24px;
 }
 
-.checkbox-input {
+.checkbox-input-hidden {
 }
 
-.checkbox-input:checked .check-box {
+.checkbox-input-hidden :checked + .confirm-label .check-box {
   background-color: #404bbf;
   border: none;
   fill: var(--light);
